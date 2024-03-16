@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: rgb(29, 29, 29);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: rgb(241, 241, 241);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 0;
+  padding-top: 22px;
+}
+
+#nav { /*https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_vertical_fixed*/
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  width: 250px;
+  list-style-type: none;
+  position: fixed;
+  height: 100%;
+  background-color: rgb(17, 17, 17);
+  overflow: auto;
+  border-radius: 0px 5px 5px 0px;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  padding: 15px 26px;
+  display: block;
+}
+
+a:hover {
+  color: black;
+  background-color: rgb(171, 171, 171);
+  border-radius: 25px;
+}
+
+#container {
+  margin-left: 250px;
+  height: 100vh;
+  overflow: auto;
+}
+
+#button {
+  background-color: rgb(171, 171, 171);
+  margin: auto;
+  padding: 15% 0%;
+  width: 60%;
+  height: 20%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#start, #playagain, #info {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#start, #playagain {
+  cursor: pointer;
+}
+
+#top-scores {
+  color: white;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    padding-top: 8vw;
+  }
+
+  #nav {
+    width: 20%;
+    padding-top: 5vw;
+  }
+
+  li a {
+    padding: 10px;
+    font-size: 2vw;
+  }
+
+  a {
+    margin-left: 3vw;
+    margin-right: 3vw;
+  }
+
+  #container {
+    margin-left: 20%;
+  }
+
+  #button {
+    margin-top: 10vw;
+    padding: 40% 10%;
+    width: 70%;
+  }
+
+  #top-scores {
+    font-size: 4vw;
+    margin-top: 7vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 5vw;
+  }
+
+  li a {
+    font-size: 3vw;
+  }
+
+  #button {
+    padding: 40% 10%;
+  }
+
+  #start, #playagain, #info {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  li a {
+    padding: 5px 10px;
+  }
+
+  a {
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+}
